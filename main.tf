@@ -6,6 +6,7 @@ terraform {
       version = "~> 3.0"
     }
   }
+  
   backend "s3" {
     bucket  = "pricespider-aws-terraform-sqlserver-production-account"
     key     = "infra/terraform/vpc/terraform.state"
